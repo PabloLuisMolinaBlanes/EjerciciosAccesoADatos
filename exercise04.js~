@@ -1,0 +1,19 @@
+var figura1 = "💓";
+var figura2 = "⚓";
+var figura3 = "💎";
+var figura4 = "🍋";
+var figura5 = "🔔";
+var figuras = [figura1, figura2, figura3, figura4, figura5];
+var eleccion1 = figuras[Math.round(Math.random()*4)];
+var eleccion2 = figuras[Math.round(Math.random()*4)];
+var eleccion3 = figuras[Math.round(Math.random()*4)];
+var figuradinero = "💰";
+var figuracalavera = "💀";
+console.log("" + figura + " " + figura2 + " " + figura3);
+if (figura1 === figura2 && figura2 === figura3) {
+	console.log("Enhorabuena, ha ganado 10 monedas " + figuradinero);
+} else if (figura1 === figura2 || figura2 === figura3 || figura3 === figura1) {
+	console.log("Bien, ha recuperado su moneda " + figuradinero);
+} else {
+	console.log("Lo siento, ha perdido " + figuracalavera);
+}
