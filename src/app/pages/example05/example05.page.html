@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>example05</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+Valor mínimo: <input [(ngModel)]="min" id="min" type="number">
+Valor máximo: <input [(ngModel)]="max" id="max" type="number">
+<ion-button (click)="genRandom()"></ion-button>
+<p> {{ value }} </p>
+</ion-content>
